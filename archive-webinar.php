@@ -3,8 +3,6 @@
  * The template for displaying webinars archive page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package chainalysis-theme
  */
  
  if ( ! defined( 'ABSPATH' ) ) {
@@ -41,7 +39,7 @@
           </div>          
           <h2 class="archive__post-title"><?php the_title(); ?></h2>
         </a>
-      <?php endwhile; else: _e('Sorry, no content found', 'chainalysis'); endif; ?>            
+      <?php endwhile; else: _e('Sorry, no content found', 'theme'); endif; ?>            
     </div>
     
     <?php previous_posts_link('Previous Page'); ?>

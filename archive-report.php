@@ -4,7 +4,6 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package chainalysis-theme
  */
  
  if ( ! defined( 'ABSPATH' ) ) {
@@ -30,7 +29,7 @@
     <div class="archive__list" data-page="<?= get_query_var('paged') ? get_query_var('paged') : 1; ?>" data-max="<?php echo $wp_query->max_num_pages; ?>">
       <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
         <?php get_template_part('template-parts/content-archive-reports'); ?>
-      <?php endwhile; else: _e('Sorry, no content found', 'chainalysis'); endif; ?>             
+      <?php endwhile; else: _e('Sorry, no content found', 'theme'); endif; ?>             
     </div>
     
     <?php previous_posts_link('Previous Page'); ?>
